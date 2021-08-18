@@ -18,7 +18,7 @@
 ; ASSEMBLY OPTIONS:
 ;
     ifndef gameRevision
-gameRevision = 2
+gameRevision = 1
     endif
 ;	| If 0, a REV00 ROM is built
 ;	| If 1, a REV01 ROM is built, which contains some fixes
@@ -11950,7 +11950,7 @@ LevelSelect_StartZone:
 	andi.w	#$3FFF,d0
 	move.w	d0,(Current_ZoneAndAct).w
 	move.b	#GameModeID_Level,(Game_Mode).w ; => Level (Zone play mode)
-	move.b	#3,(Life_count).w
+	move.b	#99,(Life_count).w
 	move.b	#3,(Life_count_2P).w
 	moveq	#0,d0
 	move.w	d0,(Ring_count).w
@@ -12306,16 +12306,16 @@ super_sonic_cheat:	dc.b   4,   1,   2,   6,   0	; Book of Genesis, 41:26
 
 	; options screen menu text
 
-TextOptScr_PlayerSelect:	menutxt	" MADE BY       "	        ; byte_97CA:
+TextOptScr_PlayerSelect:	menutxt	"  * MADE BY *  "	        ; byte_97CA:
 TextOptScr_SonicAndMiles:	menutxt	"               "	; byte_97DC:
-TextOptScr_SonicAndTails:	menutxt	"NOOBGUY57      "	; byte_97EC:
-TextOptScr_SonicAlone:		menutxt	"DANIELHALL     "	; byte_97FC:
+TextOptScr_SonicAndTails:	menutxt	"   NOOBGUY57   "	; byte_97EC:
+TextOptScr_SonicAlone:		menutxt	"  DANIEL HALL  "	; byte_97FC:
 TextOptScr_MilesAlone:		menutxt	"MILES ALONE    "	; byte_980C:
-TextOptScr_TailsAlone:		menutxt	"SHORE05        "	; byte_981C:
-TextOptScr_VsModeItems:		menutxt	"VS OPTIONS     "	        ; byte_982C:
-TextOptScr_AllKindsItems:	menutxt	"ALL KINDS ITEMS"	; byte_983E:
-TextOptScr_TeleportOnly:	menutxt	"TELEPORT ONLY  "	; byte_984E:
-TextOptScr_SoundTest:		menutxt	"SOUND TEST     "	; byte_985E:
+TextOptScr_TailsAlone:		menutxt	"    SHORE05    "	; byte_981C:
+TextOptScr_VsModeItems:		menutxt	" * THANKS TO * "	        ; byte_982C:
+TextOptScr_AllKindsItems:	menutxt	"  PEDROPOLIS   "	; byte_983E:
+TextOptScr_TeleportOnly:	menutxt	" GLITCH KARENS "	; byte_984E:
+TextOptScr_SoundTest:		menutxt	"  *SOUND TEST* "	; byte_985E:
 TextOptScr_0:			menutxt	"      00       "	; byte_9870:
 
 	charset ; reset character set
