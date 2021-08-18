@@ -3,7 +3,7 @@ A Sonic 2 practice ROM meant for all emulators and console players.
 If you would like to use it, please download the .isp with the rom SONIC THE HEDGEHOG 2 (W) (REV01) [!], as the .asm is the source code of Sonic 2 which I uploaded in case anybody wanted to improve on my work.
 This ROM removes the score information normally displayed, and replaces it with 4 values: X Subpixels, Y Subpixels, X (Horizontal) Speed, and Spindash speed. This ROM also changes the level select feature of the game in multiple ways. The level select code is now 01 01 01 01, and when you pause in level select the A, B, and C buttons no longer do their respective resetting, slow-mo, or frame advance.
 
-One downside to this rom is that it IS a fake REV02. Meaning the conveyor spindash in WF does not work. Spindashing in Sky Chase also kills you. I apologize for this and this is top priority for me to work on. I was unable to find an assembly decomp of the Sonic Classic cart which is the only REV02 that contains those glitches. In the future, I look to collaborate with others in order to convert this to a true REV02.
+One downside to this rom is that it IS REV01. Meaning the conveyor spindash in WF does not work. Spindashing in Sky Chase also kills you. I apologize for this and this is top priority for me to work on. I was unable to find an assembly decomp of the Sonic Classic cart which is the only REV02 that contains those glitches. In the future, I look to collaborate with others in order to convert this to a true REV02.
 
 Below, are where the values are stored on the screen. They are currently displayed in hex. This will change, however it is still possible to use hex.
 
