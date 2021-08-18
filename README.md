@@ -1,11 +1,11 @@
 # sonic2practicerom
-A Sonic 2 practice ROM meant for all emulators and console players. 
+A Sonic 2 practice ROM meant for all emulators and console players. Please reach out to me with any feedback or ideas.
 If you would like to use it, please download the .ips and patch it with the ROM SONIC THE HEDGEHOG 2 (W) (REV01) [!], as the .asm is the source code of Sonic 2 which I uploaded in case anybody wanted to improve on my work.
 This ROM removes the score information normally displayed, and replaces it with 4 values: X Subpixels, Y Subpixels, X (Horizontal) Speed, and Spindash speed. This ROM also changes the level select feature of the game in multiple ways. The level select code is now 01 01 01 01, and when you pause in level select the A, B, and C buttons no longer do their respective resetting, slow-mo, or frame advance.
 
 One downside to this rom is that it IS REV01. Meaning the conveyor spindash in WF does not work. Spindashing in Sky Chase also kills you. I apologize for this and this is top priority for me to work on. I was unable to find an assembly decomp of the Sonic Classic cart which is the only REV02 that contains those glitches. In the future, I look to collaborate with others in order to convert this to a true REV02.
 
-Below, are where the values are stored on the screen. They are currently displayed in hex. This will change, however it is still possible to use hex.
+Below are where the values are stored on the screen. They are currently displayed in hex. This will change, however it is still possible to use hex.
 
 ![explanation](https://user-images.githubusercontent.com/56403393/129827077-e2b74d15-c94d-4ddd-8a4e-dfd5d26bc1c6.png)
 
@@ -21,4 +21,4 @@ X speed is also displayed in hex, however, when watching these values in RAM, yo
 The In Game Timer:
 Since this ROM abuses debug mode's built in code to display RAM values, the in game timer was fixed to run properly rather than show sprite count. This does mean that you still can time over though, I tried removing time over's but Shore knows that it screws with rings and extra lives and the timer :).
 
-This ROM should be updated in the future with some more quality of life changes, but for now, I'm content with what I've done. Please reach out to me if you have any questions.
+This ROM should be updated in the future with some more quality of life changes, but for now, I'm content with what I've done. Please reach out to me if you have any questions or if you have feedback or ideas you would like to share with me.
