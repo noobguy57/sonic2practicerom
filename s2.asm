@@ -1421,16 +1421,16 @@ Pause_Loop:
 	beq.s	Pause_ChkStart		; if not, branch
 	btst	#button_A,(Ctrl_1_Press).w	; is button A pressed?
 	beq.s	Pause_ChkBC		; if not, branch
-	move.b	#GameModeID_TitleScreen,(Game_Mode).w ; set game mode to 4 (title screen)
+;	move.b	#GameModeID_TitleScreen,(Game_Mode).w ; set game mode to 4 (title screen)
 	nop
-	bra.s	Pause_Resume
+;	bra.s	Pause_Resume
 ; ===========================================================================
 ; loc_13D4:
 Pause_ChkBC:
 	btst	#button_B,(Ctrl_1_Held).w ; is button B pressed?
-	bne.s	Pause_SlowMo		; if yes, branch
+;	bne.s	Pause_SlowMo		; if yes, branch
 	btst	#button_C,(Ctrl_1_Press).w ; is button C pressed?
-	bne.s	Pause_SlowMo		; if yes, branch
+;	bne.s	Pause_SlowMo		; if yes, branch
 ; loc_13E4:
 Pause_ChkStart:
 	move.b	(Ctrl_1_Press).w,d0	; is Start button pressed?
@@ -4193,7 +4193,7 @@ ArtNem_Player1VS2:	BINCLUDE	"art/nemesis/1Player2VS.bin"
 
 ; word_3E82:
 CopyrightText:
-  irpc chr,"@ 1992 SEGA"
+  irpc chr,"GRATING HACK"
     if "chr"<>" "
 	dc.w  make_art_tile(ArtTile_ArtNem_FontStuff_TtlScr + 'chr'|0,0,0)
     else
@@ -12285,7 +12285,7 @@ CheckCheats:	; This is called from 2 places: the options screen and the level se
 +
 	rts
 ; ===========================================================================
-level_select_cheat:	dc.b $19, $65,   9, $17,   0	; 17th September 1965, Yuji Naka's birthdate
+level_select_cheat:	dc.b $01, $01,   1, $1,   0	; 17th September 1965, Yuji Naka's birthdate
 	rev02even
 ; byte_97B7
 continues_cheat:	dc.b   1,   1,   2,   4,   0	; 24th November, Sonic 2's release date in the EU and US: "Sonic 2sday"
@@ -12306,16 +12306,16 @@ super_sonic_cheat:	dc.b   4,   1,   2,   6,   0	; Book of Genesis, 41:26
 
 	; options screen menu text
 
-TextOptScr_PlayerSelect:	menutxt	"* PLAYER SELECT *"	; byte_97CA:
-TextOptScr_SonicAndMiles:	menutxt	"SONIC AND MILES"	; byte_97DC:
-TextOptScr_SonicAndTails:	menutxt	"SONIC AND TAILS"	; byte_97EC:
-TextOptScr_SonicAlone:		menutxt	"SONIC ALONE    "	; byte_97FC:
+TextOptScr_PlayerSelect:	menutxt	" MADE BY       "	        ; byte_97CA:
+TextOptScr_SonicAndMiles:	menutxt	"               "	; byte_97DC:
+TextOptScr_SonicAndTails:	menutxt	"NOOBGUY57      "	; byte_97EC:
+TextOptScr_SonicAlone:		menutxt	"DANIELHALL     "	; byte_97FC:
 TextOptScr_MilesAlone:		menutxt	"MILES ALONE    "	; byte_980C:
-TextOptScr_TailsAlone:		menutxt	"TAILS ALONE    "	; byte_981C:
-TextOptScr_VsModeItems:		menutxt	"* VS MODE ITEMS *"	; byte_982C:
+TextOptScr_TailsAlone:		menutxt	"SHORE05        "	; byte_981C:
+TextOptScr_VsModeItems:		menutxt	"VS OPTIONS     "	        ; byte_982C:
 TextOptScr_AllKindsItems:	menutxt	"ALL KINDS ITEMS"	; byte_983E:
 TextOptScr_TeleportOnly:	menutxt	"TELEPORT ONLY  "	; byte_984E:
-TextOptScr_SoundTest:		menutxt	"*  SOUND TEST   *"	; byte_985E:
+TextOptScr_SoundTest:		menutxt	"SOUND TEST     "	; byte_985E:
 TextOptScr_0:			menutxt	"      00       "	; byte_9870:
 
 	charset ; reset character set
@@ -84656,13 +84656,13 @@ Hud_TilesBase_End
 HudDb_XY:
 	move.l	#vdpComm(tiles_to_bytes(ArtTile_HUD_Score_E),VRAM,WRITE),(VDP_control_port).l
 ;	ADD     $B00A,d1   ; remove if bad;
-	move.w	($FFFFB00A).w,d1  ;           bottom left x sub
+	move.w	($FFFFB03A).w,d1  ;           bottom left spindash
 	swap	d1
-	move.w	($FFFFB00E).w,d1      ;top left y sub
+	move.w	($FFFFB00A).w,d1      ;top left x sub
 	bsr.s	HudDb_XY2
 	move.w	($FFFFB010).w,d1            ;bottom right x speed
 	swap	d1
-	move.w	($FFFFB03A).w,d1    ;top right spindash
+	move.w	($FFFFB00E).w,d1    ;top right y sub
 ; loc_41104:
 HudDb_XY2:
 	moveq	#7,d6
