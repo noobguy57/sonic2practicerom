@@ -4,7 +4,7 @@ If you would like to use it, please download the .ips and patch it with the ROM 
 
 ~~If 2.1 doesn't work try 2.0.~~ fixed
 
-This ROM removes the score information normally displayed, and replaces it with 4 values: X Subpixels, Y Subpixels, X (Horizontal) Speed, and Spindash speed. This ROM also changes the level select feature of the game in multiple ways. The level select code is now 01 01 01 01, and when you pause in level select the A, B, and C buttons no longer do their respective resetting, slow-mo, or frame advance. (may be added back in as a separate .ips for frame advance)
+This ROM removes the score information normally displayed, and replaces it with 4 values: X Subpixels, Y Subpixels, X (Horizontal) Speed, and Spindash speed. This ROM also changes the level select feature of the game in multiple ways. The level select code is now 01 01 01 01, and when you pause in level select the A, B, and C buttons no longer do their respective resetting, slow-mo, or frame advance. (with exception of .ips labeled as "cbutton".)
 
 ~~One downside to this rom is that it IS REV01. Meaning the conveyor spindash in WF does not work. Spindashing in Sky Chase also kills you. I apologize for this and this is top priority for me to work on. I was unable to find an assembly decomp of the Sonic Classic cart which is the only REV02 that contains those glitches. In the future, I look to collaborate with others in order to convert this to a true REV02.~~ I FIXED IT, IT'S NOW REV02 MEANING YOU CAN PRACTICE WING FORT AND SKY CHASE.
 
