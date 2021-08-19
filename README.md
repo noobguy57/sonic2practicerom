@@ -23,3 +23,5 @@ The In Game Timer:
 Since this ROM abuses debug mode's built in code to display RAM values, the in game timer was fixed to run properly rather than show sprite count. This does mean that you still can time over though, I tried removing time over's but Shore knows that it screws with rings and extra lives and the timer :).
 
 This ROM should be updated in the future with some more quality of life changes, but for now, I'm content with what I've done. Please reach out to me if you have any questions or if you have feedback or ideas you would like to share with me.
+
+PS: Sorry about the mis-aligned text in game, I seriously have no clue how to align it or how it decides where to go :(.
