@@ -1,4 +1,5 @@
 
+
 # sonic2practicerom
 A Sonic 2 practice ROM meant for all emulators and console players. Please reach out to me with any feedback or ideas.
 If you would like to use it, please download the .ips and patch it with the ROM SONIC THE HEDGEHOG 2 (W) (REV01) [!], any other ROM of Sonic 2 I cannot guarantee will work.
@@ -9,7 +10,7 @@ This ROM is what I like to call a standalone version of the Classic Compilation 
 
 Below are where the values are stored on the screen. They are currently displayed in hex. This will change, however it is still possible to use hex.
 
-![example3 0](https://user-images.githubusercontent.com/56403393/130340904-7fd3a6b2-0a67-44ea-8e43-e96f10ca0aa2.png)
+![example3](https://user-images.githubusercontent.com/56403393/130340948-50e4ff95-de93-41ea-a700-ff7937b73fe5.png)
 
 Subpixels:
 X and Y Subpixels are a single byte of data, meaning they range from 0-255. Every time you input left or right on a pixel and Sonic does not visibly move a pixel, your X subpixel changes. Since they are in hex, the range is from 0-FF. When you jump or run up or down a slope or fall, your Y subpixel is changed and displayed in the same way as X subpixels.
