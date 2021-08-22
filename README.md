@@ -2,7 +2,7 @@
 
 # sonic2practicerom
 A Sonic 2 practice ROM meant for all emulators and console players. Please reach out to me with any feedback or ideas.
-If you would like to use it, please download the .ips and patch it with the ROM SONIC THE HEDGEHOG 2 (W) (REV01) [!], any other ROM of Sonic 2 I cannot guarantee will work.
+
 
 This ROM removes the score information normally displayed, and replaces it with 5 values: X Subpixels, Y Subpixels, X and Y Position, and Spindash speed. This ROM also changes the level select feature of the game in multiple ways. The level select code is now 01 01 01 01, and when you pause in level select the A, B, and C buttons no longer do their respective resetting, slow-mo, or frame advance. (with exception of .bin labeled as "cbutton".)
 
