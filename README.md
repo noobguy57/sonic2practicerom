@@ -4,7 +4,7 @@
 A Sonic 2 practice ROM meant for all emulators and console players. Please reach out to me with any feedback or ideas.
 
 
-This ROM removes the score information normally displayed, and replaces it with 5 values: X Subpixels, Y Subpixels, X and Y Position, and Spindash speed. This ROM also changes the level select feature of the game in multiple ways. The level select code is now 01 01 01 01, and when you pause in level select the A, B, and C buttons no longer do their respective resetting, slow-mo, or frame advance. (with exception of .bin labeled as "cbutton".)
+This ROM removes the score information normally displayed, and replaces it with 5 values: X Subpixels, Y Subpixels, X and Y Position, and Spindash speed. This ROM also changes the level select feature of the game in multiple ways. The game automatically sends you to level select, with the A, B, and C buttons being disabled, unless you enable the C button in the options.
 
 This ROM is what I like to call a standalone version of the Classic Compilation Cart ROM, it behaves in the exact same way as that version of the game, but without Sonic 1 and Mean Bean Machine added on.
 
