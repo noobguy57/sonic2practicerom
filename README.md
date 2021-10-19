@@ -8,7 +8,7 @@ This ROM removes the score information normally displayed, and replaces it with 
 
 This ROM is what I like to call a standalone version of the Classic Compilation Cart ROM, it behaves in the exact same way as that version of the game, but without Sonic 1 and Mean Bean Machine added on.
 
-Below are where the values are stored on the screen. They are currently displayed in hex. This will change, however it is still possible to use hex.
+Below are where the values are stored on the screen. They are currently displayed in hex. This may or may not change, however it is still possible to use hex.
 
 ![example3](https://user-images.githubusercontent.com/56403393/130340948-50e4ff95-de93-41ea-a700-ff7937b73fe5.png)
 
